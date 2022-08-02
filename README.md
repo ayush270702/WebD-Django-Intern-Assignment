@@ -22,7 +22,7 @@ Create a very basic website for a school. This should contain
 
 
 
-![Screenshot (83)](https://user-images.githubusercontent.com/84328854/182409812-71f4ceb1-9b8d-491f-b9fa-29e58389ea18.png)
+
 
 
 ![Screenshot (84)](https://user-images.githubusercontent.com/84328854/182409758-d0041496-6e2f-4600-a0e6-571111aba937.png)
