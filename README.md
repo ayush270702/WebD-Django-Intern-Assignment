@@ -11,6 +11,7 @@ Create a very basic website for a school. This should contain
 ![Screenshot (77)](https://user-images.githubusercontent.com/84328854/182409568-0a8ac9f2-c7f3-4f18-bf79-5c9467b7fd59.png)
 
 
+![Screenshot (78)](https://user-images.githubusercontent.com/84328854/182410065-57a728f6-ae4b-4886-9e68-350653d5f79f.png)
 
 ![Screenshot (79)](https://user-images.githubusercontent.com/84328854/182409625-6791895b-fe76-44b8-90df-66cc7a0e1a3e.png)
 
