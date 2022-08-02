@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from .forms import * 
@@ -68,14 +69,20 @@ def teach_registration(request):
 
 # creating view for student profile    
 def stud_prof(request,pk):       # getting request with primary key
-    student = Student.objects.get(pk=pk)    #getting particular student with help of pk
-    return render(request, 'main_app/stud_profile.html', {'student': student})    # we will render stud_profile.html upon request and passing student object as context
+    if request.user.is_authenticated:   # checkif user is authenticated
+        student = Student.objects.get(pk=pk)    #getting particular student with help of pk
+        return render(request, 'main_app/stud_profile.html', {'student': student})    # we will render stud_profile.html upon request and passing student object as context
+    else:
+        return render(request, 'main_app/register.html')    # we will render register.html if user is not authenticated    
 
 
 # creating view for teacher profile
 def teach_prof(request,pk):  # getting request with primary key
-    teacher = Teacher.objects.get(pk=pk)    #getting particular teacher with help of pk
-    return render(request, 'main_app/teach_profile.html', {'teacher': teacher})     # we will render teach_profile.html upon request and passing teacher object as context
+    if request.user.is_authenticated:   # checkif user is authenticated
+        teacher = Teacher.objects.get(pk=pk)    #getting particular teacher with help of pk
+        return render(request, 'main_app/teach_profile.html', {'teacher': teacher})     # we will render teach_profile.html upon request and passing teacher object as context
+    else:
+        return render(request, 'main_app/register.html')    # we will render register.html if user is not authenticated       
 
 
 def login(request):
